@@ -3,8 +3,8 @@ class Rumo < Formula
 
   desc "Your dev work, past, now and later: Markdown files and a terminal Timeline"
   homepage "https://github.com/pedrobuzzi/rumo"
-  url "https://files.pythonhosted.org/packages/3f/58/422dd1b0e947d8f9fb6736c665d23629725dd02e80b005252a363361fb26/rumo_cli-0.2.0.tar.gz"
-  sha256 "1c1ba03371cf9eff96551a625ede47e991723610709bc4ce6f3d9a7be36343ba"
+  url "https://files.pythonhosted.org/packages/6f/c6/291f56e0fb8a4a3db33e284235022dcdfbf0af0618d943b2c2a0401abf92/rumo_cli-0.2.2.tar.gz"
+  sha256 "ddf5ca2a2a527f4e750273a3d1e5b3ef885cbbfc2bed818bd4ad3b659d17a11b"
   license "MIT"
 
   depends_on "python@3.13"
@@ -55,7 +55,9 @@ class Rumo < Formula
   end
 
   def install
-    virtualenv_install_with_resources
+    # Isolated from Homebrew Python's global site-packages: a legacy `*-nspkg.pth` left there by
+    # packages installed with pip breaks pip's builds of the resources inside this virtualenv.
+    virtualenv_install_with_resources(system_site_packages: false)
   end
 
   test do
