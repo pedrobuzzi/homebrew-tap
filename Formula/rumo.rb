@@ -3,8 +3,8 @@ class Rumo < Formula
 
   desc "Your dev work, past, now and later: Markdown files and a terminal Timeline"
   homepage "https://github.com/pedrobuzzi/rumo"
-  url "https://files.pythonhosted.org/packages/61/b8/926f9778bab961f1e071ed1a5d3afa54428644185c54b83f2a924a58cad7/rumo_cli-0.3.0.tar.gz"
-  sha256 "9657875af4f48382d50e03323e5cdd54b1ca903dd1236443930a134134f8e49e"
+  url "https://files.pythonhosted.org/packages/ad/1d/4635c7f4933bc3188b135c3edca49b2821dca6510a41e78a679521ddca55/rumo_cli-0.4.0.tar.gz"
+  sha256 "b890d4026222a9fdd16e505568eccc72d0de4714864ddb4f20750dbe33d52203"
   license "MIT"
 
   depends_on "python@3.13"
