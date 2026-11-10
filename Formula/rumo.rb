@@ -1,10 +1,10 @@
 class Rumo < Formula
   include Language::Python::Virtualenv
 
-  desc "Your dev work, past, now and later: Markdown files and a terminal Timeline"
+  desc "What your AI agent did and what is left, in Markdown and a terminal Timeline"
   homepage "https://github.com/pedrobuzzi/rumo"
-  url "https://files.pythonhosted.org/packages/ad/ce/5c9b600f94452388ab3625491bd3172cd19ac728ad3bc0c5ee0db8241ade/rumo_cli-0.5.0.tar.gz"
-  sha256 "b731b6268192583363faad867d94c0365bde26570b0621e3e72bb8b5b46278c6"
+  url "https://files.pythonhosted.org/packages/5f/22/f0c0ebda3f85be75f9455a96236756ef775302df46bd3b66ff3a7f3a7f11/rumo_cli-0.6.2.tar.gz"
+  sha256 "200d73a6ef48d9d315b85a479f8134f29807c46d800e7a1e9f927f8ada791b7f"
   license "MIT"
 
   depends_on "python@3.13"
@@ -30,8 +30,8 @@ class Rumo < Formula
   end
 
   resource "platformdirs" do
-    url "https://files.pythonhosted.org/packages/80/a8/66d45abadff219e36e2a824181b8f6a67e7ed4572934d6252c71c29d5731/platformdirs-4.13.0.tar.gz"
-    sha256 "1aa0b0d3f224c1f07c295121e312a5a24a180d6ae5a8425ea1784b3e3863e9c0"
+    url "https://files.pythonhosted.org/packages/d7/9a/8475be631fb33ca1466915e70fd594c42a4e84b512db650eaa14f90fe75d/platformdirs-4.14.5.tar.gz"
+    sha256 "32e9921db7385aa8169bee4fe9501923e5715ba9fb7ea3b9c69b0d8e0639f7a1"
   end
 
   resource "pygments" do
